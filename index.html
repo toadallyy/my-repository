@@ -1,36 +1,101 @@
-<DOCTYPE! html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-10">
-  <title>\</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
 </head>
-<body class="hello">
-  <header> 
-    <h1>< header ></h1>
-  </header>
-  
-<article>< article ></article>
+<body>
 
-<section>
-  < section > 
+<h2>Allyson P. // Digital Fan-Artist // Interactive Design Student </h2>
+<p>Click on the buttons inside the tabbed menu:</p>
 
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Artworks')">Artworks</button>
+  <button class="tablinks" onclick="openCity(event, 'What I Use')">What I Use</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact Me')">Contact Me</button>
+</div>
 
+<div id="Artworks" class="tabcontent">
+  <h3>Artworks</h3>
+  <img src="IMG_0202.PNG" alt="Characters Callie & Marie from Splatoon, dressed up as Optimus Prime & Megatron from Transformers, with half a autobot and decipticon logo in the background." width="640" height="707.5">
+  <p> ALT text: Characters Callie & Marie from Splatoon, dressed up as Optimus Prime & Megatron from Transformers, with half a autobot and decipticon logo in the background.</p>
+</div>
 
-</section>
-<ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  
-  <section>
-    < section >
+<div id="What I Use" class="tabcontent">
+  <h3>What I Use</h3>
+  <ul>
+  <li> Apple iPad Pro 12.9 Tablet (Apple Pencil included) </li>
+  <li>App: Procreate</li>
+</ul>  
+  <p>Pics and links will be shown here.</p> 
+</div>
+
+<div id="Contact Me" class="tabcontent">
+  <h3>Contact Me</h3>
+  <ol>
+  <li><p><a href="https://www.tumblr.com/agenttoad?source=share">Allyson P's Tumblr</a></p>
+</li>
+  <li><p><a href="https://bsky.app/profile/agenttoad.bsky.social">Allyson P's Bluesky</a></p> 
+  <p>Social media links here.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
    
-    <footer>< footer ></footer>
-  </section>
-  
-  </body>
-</html>
+</body>
+</html> 
 
 
 
