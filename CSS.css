@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+  font-family: 'Moncaco', monaco;}
+
+
+.tab {
+  overflow: hidden;
+  border: 5px solid #a9e18f;
+  background-color: #a9e18f;
+}
+
+
+.tab button {
+  background-color: inherit;
+  float: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: 'Moncaco', monaco;
+  
+}
+
+
+.tab button:hover {
+  background-color: #638b5d;
+}
+
+
+.tab button.active {
+  background-color: #ff5fa4;
+}
+
+
+.tabcontent {
+  display: outside;
+  padding: 6px 12px;
+  border: 1px solid #ffffff;
+  border-top: none;
+}
