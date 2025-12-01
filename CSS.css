@@ -5,9 +5,22 @@ body {
 
 .tab {
   overflow: hidden;
-  border: 5px solid #a9e18f;
-  background-color: #a9e18f;
+  background-color: #ffb464;
+  width: 1500px;
+  height: 50px;
+  background-color: #ffb464;
+  animation-name: myAnimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite
 }
+
+@keyframes myAnimation {
+  100%   {background-color: pink;}
+  100%  {background-color: pink;}
+  100%  {background-color: light rgb(255, 173, 91);}
+  100% {background-color: light rgb(255, 173, 91);}
+}
+
 
 
 .tab button {
@@ -25,7 +38,7 @@ body {
 
 
 .tab button:hover {
-  background-color: #638b5d;
+  background-color: #e56300;
 }
 
 
